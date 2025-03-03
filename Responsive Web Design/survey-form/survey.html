@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<title>Survei Kepuasan Pelanggan</title>
+</head>
+
+<body>
+	<header>
+		<h1 id="title">Survei Kepuasan Pelanggan</h1>
+		<p id="description">
+			Kami sangat menghargai masukan Anda untuk meningkatkan kualitas produk dan layanan kami.<br> Mohon
+			luangkan waktu beberapa menit untuk mengisi survei singkat ini.
+		</p>
+	</header>
+
+	<form id="survey-form">
+		<fieldset class="personal-info">
+			<div class="form-group">
+				<label for="full-name" id="name-label">Nama Lengkap:</label>
+				<input type="text" name="full-name" id="full-name" placeholder="Namamu" required>
+			</div>
+			<div class="form-group">
+				<label for="email" id="email-label">Alamat Email: </label>
+				<input type="email" name="email" id="email" placeholder="simpel@mail.com" required>
+			</div>
+			<div class="form-group">
+				<label for="age" id="number-label">Usia: </label>
+				<input type="number" name="age" id="number" min="17" max="100" placeholder="17" required>
+			</div>
+		</fieldset>
+
+		<fieldset class="survey-questions">
+			<div class="form-group">
+				<label for="dropdown">Produk/layanan apa yang paling sering Anda gunakan?</label>
+				<select id="dropdown" required>Layanan A
+					<option disabled selected value>Pilih</option>
+					<option value="">Layanan A</option>
+					<option value="">Layanan B</option>
+					<option value="">Produk A</option>
+					<option value="">Produk B</option>
+					<option value="">Lainnya</option>
+				</select>
+			</div>
+			<div class="form-group" aria-required="true" reququired>
+				<label>Fitur apa saja yang paling sering anda gunakan?</label>
+				<label for="features-1">
+					<input type="checkbox" id="features-1" name="features" value="fitur 1" checked> Fitur 1
+				</label>
+				<label for="features-2">
+					<input type="checkbox" id="features-2" name="features" value="fitur 1"> Fitur 2
+				</label>
+				<label for="features-3">
+					<input type="checkbox" id="features-3" name="features" value="fitur 1"> Fitur 3
+				</label>
+				<label for="features-4">
+					<input type="checkbox" id="features-4" name="features" value="fitur 1"> Fitur 4
+				</label>
+			</div>
+			<div class="form-group">
+				<label for="product">Bagaimana Anda mengetahui produk/layanan kami?</label>
+				<select id="product" required>
+					<option disabled selected value>Pilih</option>
+					<option value="">Media sosial</option>
+					<option value="">Iklan online</option>
+					<option value="">Teman/keluarga</option>
+					<option value="">Situs web perusahaan</option>
+					<option value="">Acara/pameran</option>
+					<option value="">Lainnya</option>
+				</select>
+			</div>
+			<div class="form-group" aria-required="true" reququired>
+				<label for="problem">Apakah Anda pernah mengalami masalah dengan produk/layanan kami?</label>
+				<label for="problem-1">
+					<input type="radio" id="problem-1" name="problem" value="ya" checked> Ya
+				</label>
+				<label for="problem-2">
+					<input type="radio" id="problem-2" name="problem" value="tidak"> Tidak
+				</label>
+			</div>
+			<div class="form-group">
+				<label for="problem-text">Jika ya, mohon jelaskan masalah yang Anda alami.
+					<textarea id="problem-text" name="problem-text" rows="4" cols="50" required></textarea>
+				</label>
+			</div>
+		</fieldset>
+
+		<fieldset class="survey-questions">
+			<div class="form-group" aria-required="true" reququired>
+				<label for="satisfaction">Seberapa puas Anda dengan pelayanan kami?</label>
+				<label for="">
+					<input type="radio" id="satisfaction" name="satisfaction" value="sangat puas" checked> Sangat puas
+				</label>
+				<label for="">
+					<input type="radio" id="satisfaction" name="satisfaction" value="sangat puas"> puas
+				</label>
+				<label for="">
+					<input type="radio" id="satisfaction" name="satisfaction" value="sangat puas"> Cukup puas
+				</label>
+				<label for="">
+					<input type="radio" id="satisfaction" name="satisfaction" value="sangat puas"> Tidak puas
+				</label>
+				<label for="">
+					<input type="radio" id="satisfaction" name="satisfaction" value="sangat puas"> Sangat tidak puas
+				</label>
+			</div>
+			<div class="form-group">
+				<label for="comments">Masukan atau saran tambahan:
+					<textarea id="comments" name="comments" rows="4" cols="50" required></textarea>
+				</label>
+			</div>
+		</fieldset>
+		<label for="validation">
+			<input class="inline" type="checkbox" id="validation" name="validation" value="validation" required> Saya
+			menyatakan bahwa
+			data yang saya isi
+			adalah data yang sebenarnya.
+		</label>
+		<button type="submit">Kirim</button>
+	</form>
+</body>
+
+</html>

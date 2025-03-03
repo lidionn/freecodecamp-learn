@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #121212;
+  margin: 20px;
+}
+
+header {
+  padding-top: 20px;
+}
+
+h1, p {
+  margin: 1rem auto;
+}
+
+form {
+  width: 90vw;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 2px solid #cccccc;
+  
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  color: #121212;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 0 0;
+  display: block;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+.inline {
+  display: inline-block;
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+button {
+  display: block;
+  width: 70%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #007aff;
+  min-width: 300px;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: #007aff;
+  background-color: #ffffff;
+  border: 1px solid #007aff;
+}
