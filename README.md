@@ -16,3 +16,4 @@ FreeCodeCamp adalah organisasi nirlaba yang menyediakan platform pembelajaran pe
 Berikut adalah daftar proyek yang terdapat di repositori ini:
 
 - [Survey Form](https://github.com/lidionn/freecodecamp-learn/tree/main/Responsive%20Web%20Design/survey-form) - Sebuah formulir survei statis yang dibuat sebagai bagian dari pembelajaran FreeCodeCamp. Proyek ini menunjukkan kemampuan saya dalam membangun struktur formulir dengan HTML dan gaya dengan CSS..
+- [Tribute Page](https://github.com/lidionn/freecodecamp-learn/tree/main/Responsive%20Web%20Design/tribute-page) - Tribute page ini, dibuat untuk sebagai bagian dari pembelajaran FreeCodeCamp, menunjukkan kemampuan saya dalam HTML dan CSS, serta responsivitas..
