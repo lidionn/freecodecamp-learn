@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>HTML Documentation Page</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>HTML Documentation</header>
+    <a href="#Introduction-to-HTML" class="nav-link">Introduction to HTML</a>
+    <a href="#Basic-Structure-of-an-HTML-Document" class="nav-link">Basic Structure of an HTML Document</a>
+    <a href="#Common-HTML-Elements" class="nav-link">Common HTML Elements</a>
+    <a href="#HTML-Attributes" class="nav-link">HTML Attributes</a>
+    <a href="#HTML-Text-Formatting" class="nav-link">HTML Text Formatting</a>
+    <a href="#HTML-Lists" class="nav-link">HTML Lists</a>
+    <a href="#Links-dan-Images" class="nav-link">Links & Images</a>
+    <a href="#HTML-Tables" class="nav-link">HTML Tables</a>
+    <a href="#HTML-Forms" class="nav-link">HTML Forms</a>
+    <a href="#Semantic-HTML" class="nav-link">Semantic HTML</a>
+    <a href="#References" class="nav-link">References</a>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introduction-to-HTML">
+      <header>Introduction to HTML</header>
+      <p><strong>HTML </strong><em>(HyperText Markup Language)</em> adalah bahasa markup standar yang digunakan untuk
+        membuat dan menyusun halaman web. HTML bukan bahasa pemrograman, melainkan bahasa yang digunakan untuk menyusun
+        elemen-elemen pada halaman web seperti teks, gambar, tautan (links), tabel, form, dan sebagainya..</p>
+      <p><b>Apa itu "HyperText"?</b></p>
+      <p>HyperText adalah teks yang memiliki tautan (link) ke teks lain. Inilah dasar dari web: dokumen yang saling
+        terhubung
+        melalui hyperlink.</p>
+      <p><b>Apa itu "Markup Language"?</b></p>
+      <p>Markup language digunakan untuk menandai bagian-bagian dokumen agar dapat dikenali oleh browser. Dalam HTML,
+        markup dibuat menggunakan tag seperti
+      <p> untuk paragraf atau <code class="code-block">&lt;img&gt;</code> untuk gambar.<br>
+        HTML bekerja bersama dengan:</p>
+      <ul>
+        <li>CSS untuk mengatur tampilan (style),</li>
+        <li>JavaScript untuk memberikan interaktivitas.</li>
+      </ul>
+    </section>
+    <section class="main-section" id="Basic-Structure-of-an-HTML-Document">
+      <header>Basic Structure of an HTML Document</header>
+      <p>Sebuah dokumen HTML terdiri atas berbagai elemen yang tersusun secara hierarkis. Berikut adalah struktur dasar:
+      </p>
+      <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My First HTML Page&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;p&gt;This is my first HTML page.&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+      </code></pre>
+      <p><b>Penjelasan:</b></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Elemen</th>
+            <th>Fungsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="code-block">&lt;!DOCTYPE html&gt;</code></td>
+            <td>Menyatakan bahwa ini adalah dokumen HTML5.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;html&gt;</code></td>
+            <td>Elemen root dari seluruh halaman.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">lang="en"</code></td>
+            <td>Menunjukkan bahasa konten (dalam contoh ini: English).</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;head&gt;</code></td>
+            <td>Berisi metadata, title, link stylesheet, dll. Tidak ditampilkan langsung di browser.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;meta charset="UTF-8"&gt;</code></td>
+            <td>Menentukan encoding karakter yang digunakan (UTF-8 mendukung hampir semua karakter).</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;meta name="viewport"&gt;</code></td>
+            <td>Membantu halaman tampil responsif pada perangkat mobile.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;title&gt;</code></td>
+            <td>Judul halaman yang muncul di tab browser.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;body&gt;</code></td>
+            <td>Semua konten yang terlihat di browser berada di sini: teks, gambar, tombol, dll.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="main-section" id="Common-HTML-Elements">
+      <header>Common HTML Elements</header>
+      <p>HTML menyediakan berbagai elemen untuk menyusun konten. Berikut beberapa yang paling umum:</p>
+      <p><b>Heading (Judul)</b></p>
+      <p>HTML memiliki 6 level heading, dari <code class="code-block">&lt;h1&gt;</code> (paling besar dan penting) sampai <code class="code-block">&lt;h6&gt;</code>.</p>
+      <pre><code>
+&lt;h1&gt;Judul Utama&lt;/h1&gt;
+&lt;h2&gt;Sub Judul&lt;/h2&gt;
+&lt;h3&gt;Judul Tingkat 3&lt;/h3&gt;
+...
+&lt;h6&gt;Judul Tingkat 6&lt;/h6&gt;
+      </code></pre>
+      <p>Gunakan heading secara hierarkis untuk membantu SEO dan keterbacaan dokumen.</p>
+      <p><b>Paragraph (Paragraf)</b></p>
+      <p>Untuk membuat paragraf, gunakan elemen <code class="code-block">&lt;p&gt;</code>. Browser secara otomatis memberikan jarak antar paragraf.</p>
+      <pre><code>
+&lt;p&gt;Ini adalah paragraf pertama.&lt;/p&gt;
+&lt;p&gt;Ini adalah paragraf kedua.&lt;/p&gt;
+      </code></pre>
+      <p><b>Line Break dan Horizontal Rule</b></p>
+      <p>Untuk membuat jeda baris, gunakan <code class="code-block">&lt;br&gt;</code>. Untuk garis horizontal, gunakan <code class="code-block">&lt;hr&gt;</code>.</p>
+      <pre><code>
+&lt;p&gt;Ini adalah paragraf pertama.&lt;br&gt;
+Ini adalah lanjutan paragraf pertama.&lt;/p&gt;
+
+&lt;hr&gt;
+      </code></pre>
+      <ul>
+        <li><code class="code-block">&lt;br&gt;</code> : Memasukkan baris baru tanpa membuat paragraf baru.</li>
+        <li><code class="code-block">&lt;hr&gt;</code> : Menambahkan garis horizontal (biasanya digunakan untuk pemisah antar bagian konten).</li>
+      </ul>
+    </section>
+    <section class="main-section" id="HTML-Attributes">
+      <header>HTML Attributes</header>
+      <p>Setiap elemen HTML bisa memiliki atribut yang memberikan informasi tambahan. Atribut biasanya ditulis di dalam tag pembuka elemen dan selalu berbentuk pasangan <code>nama="nilai"</code>.</p>
+      <p><b>Contoh Umum:</b></p>
+      <pre><code>
+&lt;img src="image.jpg" alt="Deskripsi gambar" width="200" height="250"&gt;
+      </code></pre>
+      <p><b>Penjelasan:</b></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Atribut</th>
+            <th>Fungsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="code-block">src</code></td>
+            <td>Menentukan sumber gambar.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">alt</code></td>
+            <td>Memberikan deskripsi alternatif untuk gambar (penting untuk aksesibilitas).</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">width</code></td>
+            <td>Menentukan lebar gambar dalam piksel.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">height</code></td>
+            <td>Menentukan tinggi gambar dalam piksel.</td>
+      </table>
+      <p><b>Atribut Global:</b></p>
+      <p>Beberapa atribut bisa digunakan di hampir semua elemen HTML:</p>
+      <ul>
+        <li><code class="code-block">id</code> → Memberi identitas unik.</li>
+        <li><code class="code-block">class</code> → Digunakan untuk CSS dan JavaScript.</li>
+        <li><code class="code-block">style</code> → Menambahkan styling inline.</li>
+        <li><code class="code-block">title</code> → Teks yang muncul saat elemen di-<i>hover</i>.</li>
+      </ul>
+      <pre><code>
+&lt;p id="par1" class="intro" title="Ini tooltip"&gt;Ini paragraf dengan atribut.&lt;/p&gt;
+      </code></pre>
+    </section>
+    <section class="main-section" id="HTML-Text-Formatting">
+      <header>HTML Text Formatting</header>
+      <p>HTML menyediakan berbagai tag untuk memformat teks, baik untuk penekanan, gaya, maupun fungsi tertentu.</p>
+      <p><b>Tag Penekanan:</b></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Fungsi</th>
+            <th>Tampilan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="code-block">&lt;strong&gt;</code></td>
+            <td>Penekanan penting (SEO & aksesibilitas)</td>
+            <td><b>Bold</b></td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;em&gt;</code></td>
+            <td>Penekanan miring (SEO & aksesibilitas)</td>
+            <td><i>Italic</i></td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;b&gt;</code></td>
+            <td>Teks tebal (visual saja)</td>
+            <td><b>Bold</b></td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;i&gt;</code></td>
+            <td>Teks miring (visual saja)</td>
+            <td><i>Italic</i></td>
+          </tr>
+        </tbody>
+      </table>
+      <p><b>Tag Lain:</b></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Fungsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="code-block">&lt;mark&gt;</code></td>
+            <td>Menandai teks penting (highlight).</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;code&gt;</code></td>
+            <td>Menampilkan teks sebagai kode (monospace).</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;sup&gt;</code>/<code class="code-block">&lt;sub&gt;</code></td>
+            <td>Superscript / Subscript, seperti H<code class="code-block">&lt;sup&gt;</code>2<code class="code-block">&lt;/sup&gt;</code>O atau x<code class="code-block">&lt;sub&gt;</code>2<code class="code-block">&lt;/sub&gt;</code>.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;blockquote&gt;</code></td>
+            <td>Kutipan panjang dari sumber lain.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;q&gt;</code></td>
+            <td>Kutipan pendek, inline.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><b>Contoh:</b></p>
+      <pre><code>
+&lt;p&gt;Ini adalah &lt;strong&gt;teks penting&lt;/strong&gt; dan ini adalah &lt;em&gt;teks menarik&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Air adalah H&lt;sub&gt;2&lt;/sub&gt;O, dan 5&lt;sup&gt;2&lt;/sup&gt; = 25.&lt;/p&gt;
+&lt;blockquote cite="https://example.com"&gt;
+  "Ini adalah kutipan panjang dari sumber tertentu."
+&lt;/blockquote&gt;
+      </code></pre>
+    </section>
+    <section class="main-section" id="HTML-Lists">
+      <header>HTML Lists</header>
+      <p>HTML mendukung dua jenis list utama: Ordered List (berurutan) dan Unordered List (tak berurutan). Ada juga Description List untuk definisi/penjelasan.</p>
+      <p><b>Ordered List (<code class="code-block">&lt;ol&gt;</code>):</b></p>
+      <pre><code>
+&lt;ol&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ol&gt;
+      </code></pre>
+      <p>Hasilnya akan terlihat seperti ini:</p>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+      <p><b>Unordered List (<code class="code-block">&lt;ul&gt;</code>):</b></p>
+      <pre><code>
+&lt;ul&gt;
+  &lt;li&gt;Item A&lt;/li&gt;
+  &lt;li&gt;Item B&lt;/li&gt;
+  &lt;li&gt;Item C&lt;/li&gt;
+&lt;/ul&gt;
+      </code></pre>
+      <p>Hasilnya akan terlihat seperti ini:</p>
+      <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+      </ul>
+      <p><b>Description List (<code class="code-block">&lt;dl&gt;</code>):</b></p>
+      <p>Untuk membuat daftar istilah dan definisinya.</p>
+      <pre><code>
+&lt;dl&gt;
+  &lt;dt&gt;HTML&lt;/dt&gt;
+  &lt;dd&gt;Bahasa markup untuk membuat halaman web.&lt;/dd&gt;
+  &lt;dt&gt;CSS&lt;/dt&gt;
+  &lt;dd&gt;Bahasa untuk mendesain tampilan halaman web.&lt;/dd&gt;
+  &lt;dt&gt;JavaScript&lt;/dt&gt;
+  &lt;dd&gt;Bahasa pemrograman untuk interaktivitas halaman web.&lt;/dd
+&lt;/dl&gt;
+      </code></pre>
+    </section>
+    <section class="main-section" id="Links-dan-Images">
+      <header>Links & Images </header>
+      <p><b>Links (Tautan):</b></p>
+      <p>Tautan atau hyperlink adalah elemen penting dalam HTML yang menghubungkan halaman web satu sama lain atau menuju sumber eksternal.</p>
+      <p><b>Contoh Dasar:</b></p>
+      <pre><code>
+&lt;a href="https://www.example.com"&gt;Kunjungi Example&lt;/a&gt;
+      </code></pre>
+      <p><b>Atribut Penting:</b></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Atribut</th>
+            <th>Fungsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="code-block">href</code></td>
+            <td>Menentukan URL tujuan tautan.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">target="_blank"</code></td>
+            <td>Menentukan di mana untuk membuka tautan baru (misalnya, _blank untuk tab baru).</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">title</code></td>
+            <td>Menampilkan tooltip saat kursor diarahkan</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">rel="noopener noreferrer"</code></td>
+            <td>Menentukan hubungan antara dokumen saat ini dan tautan (misalnya, "noopener" untuk keamanan).</td>
+        </tbody>
+      </table>
+      <p><b>Contoh Lengkap:</b></p>
+      <pre><code>
+&lt;a href="https://www.example.com" target="_blank" title="Example" rel="noopener noreferrer"&gt;Example&lt;/a&gt;
+      </code></pre>
+      <p><b>Images (Gambar):</b></p>
+      <p>Untuk menampilkan gambar, gunakan elemen <code class="code-block">&lt;img&gt;</code>. Ini adalah tag <i>self-closing</i> (tidak punya tag penutup).</p>
+      <p><b>Contoh:</b></p>
+      <pre><code>
+&lt;img src="image.jpg" alt="Deskripsi gambar" width="200" height="250"&gt;
+      </code></pre>
+      <p><b>Atribut Penting:</b></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Atribut</th>
+            <th>Fungsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="code-block">src</code></td>
+            <td>Menentukan sumber gambar.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">alt</code></td>
+            <td>Memberikan deskripsi alternatif untuk gambar (penting untuk aksesibilitas).</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">width</code>/<code class="code-block">height</code></td>
+            <td>Menentukan lebar dan tinggi gambar dalam piksel.</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note">
+        <strong>Catatan:</strong> Selalu gunakan atribut <code class="code-block">alt</code> untuk gambar agar dapat diakses oleh pembaca layar dan untuk SEO. Ini juga membantu jika gambar tidak dapat dimuat.
+      </div>
+    </section>
+    <section class="main-section" id="HTML-Tables">
+      <header>HTML Tables</header>
+      <p>HTML menyediakan elemen untuk membuat tabel yang terdiri dari baris dan kolom. Tabel digunakan untuk menyajikan data dalam format terstruktur.</p>
+      <p><b>Contoh Dasar:</b></p>
+      <pre><code>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+      </code></pre>
+      <p><b>Penjelasan:</b></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Fungsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="code-block">&lt;table&gt;</code></td>
+            <td>Membuat tabel.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;tr&gt;</code></td>
+            <td>Membuat baris dalam tabel.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;th&gt;</code></td>
+            <td>Table header (judul kolom, teks tebal dan rata tengah)</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;td&gt;</code></td>
+            <td>Membuat sel data biasa.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;thead&gt;</code></td>
+            <td>Menandai bagian header tabel.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;tbody&gt;</code></td>
+            <td>Menandai bagian tubuh tabel.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;tfoot&gt;</code></td>
+            <td>Menandai bagian footer tabel.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="main-section" id="HTML-Forms">
+      <header>HTML Forms</header>
+      <p>Formulir HTML digunakan untuk mengumpulkan data dari pengguna. Formulir dapat berisi berbagai elemen seperti input teks, radio button, checkbox, dropdown, dan tombol.</p>
+      <p><b>Contoh Dasar:</b></p>
+      <pre><code>
+&lt;form action="/submit" method="POST"&gt;
+  &lt;label for="name"&gt;Nama:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+
+  &lt;input type="submit" value="Kirim"&gt;
+&lt;/form&gt;
+      </code></pre>
+      <p><b>Penjelasan:</b></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Fungsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="code-block">&lt;form&gt;</code></td>
+            <td>Membuat formulir.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">action</code></td>
+            <td>URL tujuan saat formulir dikirim.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">method</code></td>
+            <td>Metode pengiriman data (GET atau POST).</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;label&gt;</code></td>
+            <td>Membuat label untuk elemen input.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;input&gt;</code></td>
+            <td>Membuat elemen input (teks, radio, checkbox, dll).</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="main-section" id="Semantic-HTML">
+      <header>Semantic HTML</header>
+      <p>Semantic HTML adalah penggunaan elemen HTML yang memiliki makna tertentu. Ini membantu mesin pencari dan pembaca layar memahami struktur dan konten halaman.</p>
+      <p><b>Contoh tag Semantik:</b></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Tag</th>
+            <th>Fungsi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code class="code-block">&lt;header&gt;</code></td>
+            <td>Bagian atas halaman, biasanya berisi logo dan navigasi.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;nav&gt;</code></td>
+            <td>Bagian navigasi, berisi tautan ke bagian lain dari halaman.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;main&gt;</code></td>
+            <td>Bagian utama konten halaman.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;article&gt;</code></td>
+            <td>Konten independen yang bisa berdiri sendiri.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;section&gt;</code></td>
+            <td>Bagian terpisah dalam dokumen, biasanya dengan heading.</td>
+          </tr>
+          <tr>
+            <td><code class="code-block">&lt;footer&gt;</code></td>
+            <td>Bagian bawah halaman, biasanya berisi informasi hak cipta dan tautan tambahan.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Penggunaan elemen semantik membantu dalam SEO dan aksesibilitas.</p>
+    </section>
+    <section class="main-section" id="References">
+      <header>References</header>
+      <p>Berikut adalah referensi resmi dan tepercaya untuk memperdalam HTML:</p>
+      <ul>
+        <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a></li>
+        <li><a href="https://www.freecodecamp.org/news/html-crash-course/" target="_blank">FreeCodeCamp - HTML for Beginners</a></li>
+    </section>
+  </main>
+</body>
+
+</html>
